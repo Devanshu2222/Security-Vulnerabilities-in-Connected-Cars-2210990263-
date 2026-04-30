@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────
+# Connected Car Security LLM — Dependencies
+# ─────────────────────────────────────────────────────────────
+
+# Core ML / embeddings (local, no GPU required)
+sentence-transformers>=2.7.0
+numpy>=1.24.0
+
+# Ollama client (HTTP calls — no extra lib needed beyond requests)
+requests>=2.31.0
+
+# Streamlit UI
+streamlit>=1.35.0
+
+# PDF ingestion (optional — for uploading your own PDFs)
+pdfplumber>=0.10.0
+pypdf>=4.0.0
+
+# ─────────────────────────────────────────────────────────────
+# Optional: swap to these providers by changing config
+# ─────────────────────────────────────────────────────────────
+
+# OpenAI backend (optional)
+# openai>=1.30.0
+
+# Anthropic backend (optional)
+# anthropic>=0.28.0
+
+# HuggingFace local models (optional — needs GPU for 7B+ models)
+# transformers>=4.40.0
+# torch>=2.2.0
+# accelerate>=0.29.0
+# bitsandbytes>=0.43.0   # for 4-bit quantization
